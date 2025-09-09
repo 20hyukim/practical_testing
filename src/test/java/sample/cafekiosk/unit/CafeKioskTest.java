@@ -1,5 +1,6 @@
 package sample.cafekiosk.unit;
 
+import org.junit.jupiter.api.DisplayName;
 import org.junit.jupiter.api.Test;
 import sample.cafekiosk.unit.beverage.Americano;
 import sample.cafekiosk.unit.beverage.Latte;
@@ -24,7 +25,8 @@ class CafeKioskTest {
 
         // 단위 테스트: 작은 코드 단위를 독립적으로 검증하는 테스트
     }
-
+    // @DisplayName("음료 1개 추가 테스트") 아래 DisplayName과 현 줄에 있는 DisplayName 중에 어떤 것이 더 와닿는가.
+    @DisplayName("음료개를 추가하면 주문 목록에 담긴다.")
     @Test
     void add() {
         CafeKiosk cafeKiosk = new CafeKiosk();
